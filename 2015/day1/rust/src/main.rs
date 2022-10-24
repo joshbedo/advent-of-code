@@ -4,8 +4,8 @@ fn main() {
 
 
 fn find_floor(str: &str) {
-    let up = '(';
-    let down = ')';
+    const UP: char = '(';
+    const DOWN: char = ')';
     let mut current_floor: i32 = 0;
 
     for (idx, char) in str.chars().enumerate() {
@@ -14,11 +14,11 @@ fn find_floor(str: &str) {
             break;
         }
         
-        if char == up {
+        if char == UP {
             current_floor += 1;
         }
 
-        if char == down {
+        if char == DOWN {
             current_floor -= 1;
         }
 
