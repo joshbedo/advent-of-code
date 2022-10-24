@@ -14,6 +14,7 @@ function findFloor(str) {
         if (str[i] === '(') {
             currFloor += 1;
         }
+        
         if (str[i] === ')') {
             currFloor -= 1;
         }
